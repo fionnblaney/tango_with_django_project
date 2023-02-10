@@ -1,5 +1,6 @@
 from django.contrib import admin
 from rango.models import Category, Page
+from rango.models import UserProfile
 
 # Register your models here.
 class CategoryAdmin(admin.ModelAdmin):
@@ -15,3 +16,5 @@ class PageAdmin(admin.ModelAdmin):
         return self.name
 
 admin.site.register(Page, PageAdmin)
+
+admin.site.register(UserProfile)
